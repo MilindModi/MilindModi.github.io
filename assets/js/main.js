@@ -6,6 +6,7 @@
  */
 $(document).ready(function () {
   "use strict";
+  $("#main-nav, #main-nav-subpage").slideDown(700);
 
   // ========================================================================= //
   //  //SMOOTH SCROLL
@@ -32,7 +33,7 @@ $(document).ready(function () {
     $(document).off("scroll");
 
     if ($(window).width() < 768) {
-      $(".nav-menu").slideUp();
+      // $(".nav-menu").slideUp();
     }
 
     var target = this.hash,
@@ -74,9 +75,9 @@ $(document).ready(function () {
       $("#main-nav, #main-nav-subpage").slideDown(700);
       $("#main-nav-subpage").removeClass("subpage-nav");
     } else {
-      $("#main-nav").slideUp(700);
-      $("#main-nav-subpage").hide();
-      $("#main-nav-subpage").addClass("subpage-nav");
+      // $("#main-nav").slideUp(700);
+      // $("#main-nav-subpage").hide();
+      // $("#main-nav-subpage").addClass("subpage-nav");
     }
   });
 
